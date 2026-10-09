@@ -5,9 +5,9 @@
   "main": "src/calculator.js",
   "scripts": {
     "start": "node src/calculator.js",
-    "test": "node --test test/calculator.test.js"
+    "test": "jest"
   },
   "devDependencies": {
-    "jest": "^30.2.0"
+    "jest": "^30.5.2"
   }
 }
