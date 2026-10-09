@@ -1,14 +1,15 @@
-From node:22-alpine
 
-workdir /app
+FROM node:22-alpine
 
-copy package.json package-lock.json ./
+WORKDIR /app
 
+COPY package*.json ./
 
-npm run ci
+RUN npm ci
 
-copy . .
+COPY . .
 
-expose 3000
+EXPOSE 3000
 
-cmd ["npm", "start"]
+CMD ["npm", "start"]
+
