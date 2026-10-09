@@ -1,0 +1,4 @@
+.git
+.env
+npm-debug.log
+coverage
